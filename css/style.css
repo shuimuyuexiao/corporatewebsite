@@ -1340,6 +1340,10 @@ hr {
 	margin: auto
 }
 
+.home-desc b{
+	color:#4f5c6a;
+}
+
 .form-select {
 	color: #676f86!important
 }
