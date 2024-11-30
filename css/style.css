@@ -1309,8 +1309,9 @@ hr {
 }
 
 .home-overlay {
-	background-image: url(../images/bg-1.jpeg);
-	opacity: .7;
+	background-image: url(../images/bg-1.jpg);
+	background-size:cover;
+	opacity: .85;
 	background-position: center;
 	position: absolute;
 	height: 100%;

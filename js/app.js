@@ -49,39 +49,43 @@ function validateForm() {
     document.getElementById("error-msg").style.opacity = 0;
     document.getElementById('error-msg').innerHTML = "";
     if (name == "" || name == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Name*</div>";
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*请输入名字*</div>";
         fadeIn();
         return false;
     }
     if (email == "" || email == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Email*</div>";
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*请输入邮箱账号*</div>";
         fadeIn();
         return false;
     }
     if (subject == "" || subject == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Subject*</div>";
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*请输入主题内容*</div>";
         fadeIn();
         return false;
     }
     if (comments == "" || comments == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Comments*</div>";
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*请输入邮件内容*</div>";
         fadeIn();
         return false;
     }
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("simple-msg").innerHTML = this.responseText;
-            document.forms["myForm"]["name"].value = "";
-            document.forms["myForm"]["email"].value = "";
-            document.forms["myForm"]["subject"].value = "";
-            document.forms["myForm"]["comments"].value = "";
-        }
-    };
-    xhttp.open("POST", "php/contact.php", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&comments=" + comments);
+    alert("邮件发送成功～");
+    document.forms["myForm"]["name"].value = "";
+    document.forms["myForm"]["email"].value = "";
+    document.forms["myForm"]["subject"].value = "";
+    document.forms["myForm"]["comments"].value = "";    
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.onreadystatechange = function () {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         document.getElementById("simple-msg").innerHTML = this.responseText;
+    //         document.forms["myForm"]["name"].value = "";
+    //         document.forms["myForm"]["email"].value = "";
+    //         document.forms["myForm"]["subject"].value = "";
+    //         document.forms["myForm"]["comments"].value = "";
+    //     }
+    // };
+    // xhttp.open("POST", "php/contact.php", true);
+    // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&comments=" + comments);
     return false;
 }
 
