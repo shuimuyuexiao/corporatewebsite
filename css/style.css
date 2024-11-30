@@ -865,7 +865,7 @@ hr {
 }
 
 .text-muted {
-	color: #fbfcff!important
+	color: #808eb1!important
 }
 
 .border-muted {
@@ -1342,6 +1342,10 @@ hr {
 
 .home-desc b{
 	color:#ffffff;
+}
+
+p.home-desc{
+	color:#f8faff!important;
 }
 
 .form-select {
