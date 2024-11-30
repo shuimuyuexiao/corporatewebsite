@@ -865,7 +865,7 @@ hr {
 }
 
 .text-muted {
-	color: #808eb1!important
+	color: #fbfcff!important
 }
 
 .border-muted {
@@ -1309,7 +1309,7 @@ hr {
 }
 
 .home-overlay {
-	background-image: url(../images/bg-1.png);
+	background-image: url(../images/bg-1.jpeg);
 	opacity: .7;
 	background-position: center;
 	position: absolute;
@@ -1341,7 +1341,7 @@ hr {
 }
 
 .home-desc b{
-	color:#4f5c6a;
+	color:#ffffff;
 }
 
 .form-select {
